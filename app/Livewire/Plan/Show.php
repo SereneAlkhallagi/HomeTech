@@ -104,6 +104,6 @@ class Show extends ModalComponent
     {
         $deviceNames = array_column($room->devices, 'value');
         $deviceList = implode(", ", $deviceNames);
-        return "smart devices for a {$room->type} room measuring {$room->height} by {$room->width} meters. devices like {$deviceList}, ";
+        return "smart devices for a {$room->type} room measuring {$room->height} by {$room->width} meters. devices like {$deviceList}, the Minimum budget {$this->plan->min_budget} and maximum budget {$this->plan->max_budget}";
     }
 }
